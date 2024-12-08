@@ -1,95 +1,86 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2566">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文生图与文生视频展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+        }
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        img, video {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        ruby {
+            font-size: 18px;
+            color: #333;
+        }
+        rt {
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="zh"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;照片收集网站&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #f9f9f9;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #4CAF50;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.upload-section {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.gallery {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.gallery img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;照片收集网站&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;上传并展示您的照片&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="upload-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="file" id="fileInput" accept="image/*" multiple&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="uploadPhotos()"&gt;上传照片&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="gallery" id="gallery"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 照片展示区 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function uploadPhotos() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const input = document.getElementById('fileInput');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const gallery = document.getElementById('gallery');</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (input.files.length === 0) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>alert("请选择至少一张照片！");</p>
-<p class="p1"><span class="Apple-converted-space">        </span>return;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>for (let i = 0; i &lt; input.files.length; i++) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const file = input.files[i];</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const reader = new FileReader();</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>reader.onload = function(e) {</p>
-<p class="p1"><span class="Apple-converted-space">          </span>const img = document.createElement('img');</p>
-<p class="p1"><span class="Apple-converted-space">          </span>img.src = e.target.result;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>gallery.appendChild(img);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>};</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>reader.readAsDataURL(file);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <h1>文生图与文生视频展示</h1>
+    
+    <!-- 文生图展示 -->
+    <div class="section">
+        <h2>文生图展示</h2>
+        <p>成语：<ruby>破釜沉舟<rt>pò fǔ chén zhōu</rt></ruby></p>
+        <ul>
+            <li>选择成语“破釜沉舟”。</li>
+            <li>生成一张相关图片。</li>
+            <li>展示生成的图片。</li>
+        </ul>
+        <img src="example-image.png" alt="生成的成语图片">
+        <p>生成过程简述：利用AI生成技术，展示“破釜沉舟”的含义，例如战场上士兵破釜沉舟的场景。</p>
+    </div>
+    
+    <!-- 文生视频展示 -->
+    <div class="section">
+        <h2>文生视频展示</h2>
+        <p>成语：<ruby>破釜沉舟<rt>pò fǔ chén zhōu</rt></ruby></p>
+        <ul>
+            <li>成语选择：破釜沉舟。</li>
+            <li>生成4个关键帧：
+                <ul>
+                    <li>第一帧：古代士兵砸毁锅具，烧毁船只。</li>
+                    <li>第二帧：士兵全力冲锋，士气高涨。</li>
+                    <li>第三帧：敌军阵地逐渐被突破。</li>
+                    <li>第四帧：取得胜利，战场上的欢呼。</li>
+                </ul>
+            </li>
+        </ul>
+        <video controls>
+            <source src="example-video.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+        <p>音乐：激昂的背景乐。解说：描述成语“破釜沉舟”的来源及画面的关联。</p>
+    </div>
 </body>
 </html>
